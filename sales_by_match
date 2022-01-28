@@ -1,0 +1,13 @@
+def sockMerchant(n, ar):
+    # Write your code here
+    socks={}
+    for i in ar:
+        if i not in socks:
+            socks[i]=1
+            print(i)
+            continue
+        socks[i] +=1
+    count=0
+    for i in socks.values():
+        count+=i//2
+    return count  
