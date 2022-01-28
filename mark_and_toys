@@ -1,0 +1,10 @@
+def maximumToys(prices, k):
+    # Write your code hereg
+    gift=0
+    for i in sorted(prices):
+        if i <k:
+            k-=i
+            gift+=1
+            if k <0:
+                break
+    return gift
