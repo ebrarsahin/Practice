@@ -1,0 +1,7 @@
+def rotLeft(a, d):
+    # Write your code here
+    res=a[0:d]
+    for i in range(len(a)-d):
+        a[i]=a[i+d]
+    a[-d:]=res
+    return a
